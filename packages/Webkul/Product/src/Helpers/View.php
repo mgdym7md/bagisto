@@ -58,6 +58,7 @@ class View
                 'id'         => $attribute->id,
                 'code'       => $attribute->code,
                 'label'      => $attribute->name,
+                'enable_wysiwyg' => $attribute->enable_wysiwyg,
                 'value'      => $value,
                 'admin_name' => $attribute->admin_name,
                 'type'       => $attribute->type,
