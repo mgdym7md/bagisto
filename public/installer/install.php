@@ -55,7 +55,7 @@
 
             if (! $conn->connect_error) {
                 // retrieving admin entry
-                $prefix = $databaseData['DB_PREFIX'].'admins';
+                $prefix = 'admins';
                 $sql = "SELECT id, name FROM $prefix";
                 $result = $conn->query($sql);
 
