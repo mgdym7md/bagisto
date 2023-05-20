@@ -39,7 +39,7 @@
                                 </a>
                             </td>
                             @elseif(
-                                $attribute['type'] == 'enable_wysiwyg'
+                                $attribute['enable_wysiwyg'] == 1
                                 && $attribute['value']
                             )
                             <td>{!!  $attribute['value'] !!} </td>
