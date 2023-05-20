@@ -38,6 +38,11 @@
                                     <img src="{{ Storage::url($attribute['value']) }}" style="height: 20px; width: 20px;" alt=""/>
                                 </a>
                             </td>
+                            @elseif(
+                                $attribute['type'] == 'enable_wysiwyg'
+                                && $attribute['value']
+                            )
+                            <td>{!!  $attribute['value'] !!} </td>
                         @else
                             <td>{{ $attribute['value'] }}</td>
                         @endif
