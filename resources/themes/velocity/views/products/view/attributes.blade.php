@@ -45,6 +45,13 @@
                                 </td>
                             @else
                                 <td>{{ $attribute['value'] }}</td>
+                            @elseif(
+                                $attribute['type'] == 'enable_wysiwyg'
+                                && $attribute['value']
+                            )
+                                <td>{!!  $attribute['value'] !!} </td>
+                            @else
+                                <td>{{ $attribute['value'] }}</td>
                             @endif
                         </tr>
                     @endforeach
